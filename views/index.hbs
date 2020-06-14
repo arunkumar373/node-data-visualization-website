@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+    
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="IPL visualization">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <link rel='stylesheet' href='./css/styles.css'>
+
+    <link rel='icon' href="./img/ipl.svg">
+    <title>
+        IPL visualization
+    </title>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+
+</head>
+
+<body>
+                 <h1>IPL Dataset visualization</h1>
+                 <div id="matches-played-per-year"style="min-width: 310px; pading:10px; height: 400px; border: 1px solid grey;
+  border-radius: 5px; margin: 0 auto"></div> 
+                 <div id="matches-Won-By-Team-Per-Year"style="min-width: 310px; height: 400px; border: 1px solid grey;
+  border-radius: 5px; margin: 0 auto"></div>
+                 <h2>Select the season to see the extra runs given by each team</h2>
+                 <div class="center">
+                     <select id="selectBox" style="font-size:15px">
+                     <option value=''>Choose Year</option>
+                    <option value="2008">2008</option>
+                    <option value="2009">2009</option>
+                    <option value="2010">2010</option>
+                    <option value="2011">2011</option>
+                    <option value="2012">2012</option>
+                    <option value="2013">2013</option>
+                    <option value="2014">2014</option>
+                    <option value="2015">2015</option>
+                    <option value="2016">2016</option>
+                    <option value="2017">2017</option>
+                    <option value="2018">2018</option>
+                    <option value="2019">2019</option>
+                 </select> 
+                 <button onclick='myFunction()'>submit</button>
+               </div>
+               
+                 
+               
+             <div id="extra-Run-Conced-By-Each-Team"style="min-width: 310px; height: 400px; border: 1px solid grey;
+  border-radius: 5px; margin: 0 auto"></div> 
+             <div id="top-Economic-Bowler"style="min-width: 310px; height: 400px; border: 1px solid grey;
+  border-radius: 5px; margin: 0 auto"></div>
+             <div id="matches-Won-by-Each-Team-Per-Venue"style="min-width: 310px; height: 800px; border: 1px solid grey;
+  border-radius: 5px; margin: 0 auto"></div>
+                <script  src="./app.js"></script>  
+     
+</body>
+</html>
